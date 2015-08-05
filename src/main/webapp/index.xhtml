@@ -1,0 +1,30 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	>
+
+<h:head>
+	<title>Demo</title>
+</h:head>
+
+<h:body>
+
+<h3>Basics</h3>
+<p>If you can see this the page is deployed.</p>
+
+<p><h:outputText value="If you can also see this, JSF is working."/></p>
+
+<h3>JSF page using JSF Managed Bean Using SLSB</h3>
+<p><h:outputText value="And here is the greeting from the Managed Bean using the SLSB EJB:"/>
+<br/>
+<h:outputText value="#{mbUsingSlsb.greeting}."/>
+</p>
+
+<h3>JSF Page using SLSB</h3>
+<p>
+And can we get the SLSB directly? Here is its greeting:
+<h:outputText value="#{demoSLSB.sayHello()}."/></p>
+
+</h:body>
+</ui:composition>
