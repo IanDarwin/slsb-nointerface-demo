@@ -3,5 +3,5 @@
 Demo of the modern Java EE EJB, which is interface-free
 and with WAR-only deployment.
 
-The Bean class is annotated with both @Local and @Remote,
-and is injected into a JSF Managed Bean.
+The Bean class is annotated with both @LocalBean and @Remote,
+and is both injected into a JSF Managed Bean and used directly.
